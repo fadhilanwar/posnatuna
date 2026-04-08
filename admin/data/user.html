@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Pelanggan - NATUNA Grosir</title>
+    <link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+
+    <div class="header">
+        <div class="logo">NATUNA Grosir</div>
+        
+        <ul class="menu-kiri">
+            <li><a href="../index.html" >Dashboard</a></li>
+            <li><a href="jenis.html">Jenis Barang</a></li>
+            <li><a href="barang.html">Barang</a></li>
+            <li><a class="aktif" href="user.html">User</a></li>
+            <li><a href="karyawan.html">Karyawan</a></li>
+        </ul>
+
+        <ul class="menu-kanan">
+            <li><a href="../transaksi/kasir.html">Kasir</a></li>
+            <li><a href="../transaksi/transaksi-masuk.html">Transaksi Masuk</a></li>
+            <li><a href="../transaksi/jadwal-pengiriman.html">Jadwal Pengiriman</a></li>
+            <li><a href="../laporan/laporan.html">Laporan</a></li>
+            <li><a style="color: red;" href="../../login.html">Logout</a></li>
+
+        </ul>
+    </div>
+
+    <div class="konten">
+        <h1>Data Pelanggan / Client</h1>
+        <p class="keterangan">Pengguna yang dapat melakukan akses login</p>
+        <div class="header-konten">
+            <a class="tombol-insert" href="crud-page/insert-user.html">
+                + Tambah Data
+            </a>
+            
+            <div class="grup-pencarian">
+                <input type="text" class="input-cari" placeholder="Cari...">
+                <button class="tombol-cari">Cari</button>
+            </div>
+        </div>  
+
+        <div class="bungkus-tabel">
+            <table class="tabel-data">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>ID User</th>
+                        <th>Nama</th>
+                        <th>Alamat</th>
+                        <th>Aksi</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><b>1</b></td>
+                        <td>USR0001</td>
+                        <td>Udin Jamaludin</td>
+                        <td>Jl. Kenanga, U7 No. 10</td>
+                        <td>
+                            <a href="crud-page/edit-user.html">
+                                <button class="tombol-edit">Edit</button>
+                            </a>                            
+                            <button onclick="confirm('Apakah Anda yakin ingin menghapus user ini?')" class="tombol-hapus">Hapus</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><b>2</b></td>
+                        <td>USR0002</td>
+                        <td>Asep Surasep</td>
+                        <td>Jl. Bugenville, U8 No. 03</td>
+                        <td>
+                            <a href="crud-page/edit-user.html">
+                                <button class="tombol-edit">Edit</button>
+                            </a>
+                            <button onclick="confirm('Apakah Anda yakin ingin menghapus user ini?')" class="tombol-hapus">Hapus</button>
+                        </td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+        
+</body>
+</html>
